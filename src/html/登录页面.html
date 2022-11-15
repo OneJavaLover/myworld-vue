@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .border{
+            height: auto;
+            width: auto;
+        }
+        /*图片展示框*/
+        .showImg{
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            float: left;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .showImg img{
+            height:100%;
+            width:100.4%;
+            transition:all 1s ease;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .frame{
+            height: 350px;
+            width: 900px;
+            border-radius: 20px;
+            background-color: #666666;
+            box-shadow:0px 0px 10px #00CED1;
+            /*box-shadow:0px 0px 10px #888888;*/
+            position: relative;
+            left: 20%;
+            margin-top: -80vh;
+        }
+        img{
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top: 0;*/
+            height: 99.5vh;
+            width: 100%;
+        }
+        .login{
+            float: left;
+            height: 350px;
+            width: 550px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            padding-top: 60px;
+        }
+        button{
+            height: 40px;
+            width: 80px;
+            font-size: 15px;
+            border-radius: 15px;
+        }
+        .input{
+            height: 30px;
+            color: black;
+            border-radius: 15px;
+            border: 0px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="border">
+    <img src="../../src/assets/(10).jpg">
+    <div class="frame">
+        <!--图片展示框-->
+        <div class="showImg">
+            <img src="../assets/loginBg.png">
+        </div>
+        <div class="login" >
+            账号：<input class="input" type="text" ><br>
+            密码：<input class="input" type="password"/><br>
+            <button>登录</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <trees>
+     <tree path="/src/components/PersonalLabel.vue" title="首页个人标签" extension="vue"/>
+     <tree path="/src/components/HeadBar.vue" title="头部栏和背景" extension="vue"/>
+     <tree path="/src/components/ArticleDisplayBox.vue" title="文章展示框" extension="vue"/>
+     <tree path="/src/components/OnlyHead.vue" title="纯导航栏" extension="vue"/>
+     <tree path="/src/components/StudyHeadImg.vue" title="学习页面顶部背景" extension="vue"/>
+     <tree path="/src/components/TimeLine.vue" title="时间线" extension="vue"/>
+     <tree path="/src/components/testView.vue" title="用于测试" extension="vue"/>
+     <tree path="/src/components/EditorFrame.vue" title="富文本编辑框" extension="vue"/>
+     <tree path="/src/page/common/ArticlePage.vue" title="文章详情页面" extension="vue"/>
+     <tree path="/src/page/study/StudyPage.vue" title="学习首页" extension="vue"/>
+     <tree path="/src/components/ArticlePageHeaderImg.vue" title="文章详情页面顶部图片" extension="vue"/>
+    <tree path="/src/components/WeChatCode.vue" title="微信二维码" extension="vue"/>
+    <tree path="/src/components/QQCode.vue" title="QQ二维码" extension="vue"/>
+    <tree path="/src/page/study/BadCard.vue" title="忌" extension="vue"/>
+    <tree path="/src/page/study/GoodCard.vue" title="宜" extension="vue"/>
+    <tree path="/src/page/editor/BookEditorPage.vue" title="读书笔记编辑页" extension="vue"/>
+    <tree path="/src/page/editor/EditorPage.vue" title="文章编辑页" extension="vue"/>
+    <tree path="/src/page/editor/EditorFrame.vue" title="富文本编辑框" extension="vue"/>
+    <tree path="/src/assets" title="静态资源"/>
+    <tree path="/src/components" title="组件"/>
+    <tree path="/src/css" title="样式"/>
+    <tree path="/src/page" title="页面"/>
+    <tree path="/src/router" title="路由配置"/>
+    <tree path="/src/store" title="全局变量"/>
+</trees>

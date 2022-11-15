@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>读书卡片</title>
+    <style>
+        .excerpt{
+            width: 550px;
+            height: 250px;
+            text-align: left;
+        }
+        .bgImg{
+            width: 100%;
+            height: 100%;
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+        .sentence{
+            margin-top: 10px;
+            display: flex;
+            justify-content: left;
+            font-family: 楷体;
+        }
+        .border{
+            width: 355px;
+            height: 200px;
+            position: absolute;
+            vertical-align: middle;
+            margin-top: 60px;
+            margin-left: 100px;
+            z-index: 10;
+        }
+        .from{
+            vertical-align: center;
+            margin-top: 10px;
+            display: flex;
+            justify-content: right;
+        }
+        .outside{
+            width: 550px;
+            height: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="outside">
+    <i>----《安娜卡列尼娜》 · 列夫托尔斯泰----</i>
+    <div class="excerpt">
+        <div class="border">
+            <i class="sentence">
+                &nbsp; &nbsp;&nbsp;首先我们应该知道文字的水平居中比较简单，行级元素设置其父元素的，块级元素设置其本身的和。但是文字的垂直居中就不是那么简单了，所以我们就来具体看看文字垂直居中的几种实现方法。
+            </i>
+<!--            <i class="from">&#45;&#45;&#45;&#45;李白《蜀道难》</i>-->
+        </div>
+        <img class="bgImg" src="../../src/assets/780.png">
+    </div>
+</div>
+</body>
+</html>

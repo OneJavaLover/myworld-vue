@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>头部栏</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .yua {
+            position: absolute;
+            top: 0;
+            left: 10%;
+            width: 1px;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.50));
+            animation: xhxy .5s infinite;
+        }
+        .yub {
+            position: absolute;
+            top: 0;
+            left: 18%;
+            width: 1px;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.30));
+            animation: xhxy .3s infinite;
+        }
+        .yuc {
+            position: absolute;
+            top: 0;
+            left: 27%;
+            width: 1px;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.40));
+            animation: xhxy .6s infinite;
+        }
+        .yud {
+            position: absolute;
+            top: 0;
+            left: 55%;
+            width: 1px;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.30));
+            animation: xhxy .4s infinite;
+        }
+        .yue {
+            position: absolute;
+            top: 0;
+            left: 80%;
+            width: 1px;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.50));
+            animation: xhxy .5s infinite;
+        }
+        .yuf {
+            position: absolute;
+            top: 0;
+            left: 90%;
+            width: 1px;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.30));
+            animation: xhxy .6s infinite;
+        }
+        .bgimg{
+            height: 100vh;
+            width: auto;
+            width: 100%;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+        }
+
+        @keyframes xhxy {
+            0% {top:5%;}
+            100% {top:85%;}
+        }
+        .top{
+            width: auto;
+            height: 100vh;
+            position: relative;
+        }
+        .bg{
+            background-color: white;
+            width: auto;
+            height: 500px;
+            position: relative;
+        }
+
+        .frame{
+            height: 100px;
+            width: 100%;
+            /*background:linear-gradient(to bottom,rgba(138,171,202,0.85),rgba(138,171,202,0));*/
+            z-index: 7;
+            line-height: 75px;
+            position: fixed;
+        }
+        /*导航栏标题*/
+        .navigation{
+            width: 80px;
+            height: 60px;
+            font-family: 楷体;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            vertical-align: middle;
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            float: right;
+        }
+        /*导航栏标题悬浮*/
+        .navigation:hover{
+            font-size: 22px;
+            background-color: rgba(17,64,108,0.2);
+        }
+        .title{
+            width: 150px;
+            height: 60px;
+            font-family: 华文行楷;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            margin-left: 20px;
+            vertical-align: middle;
+            background-color: transparent;
+            border: none;
+        }
+        .icon{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+
+        .con {
+            position: absolute;
+            top: 40%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+        .line {
+            border-right: 2px solid #ffffff;
+            font-size: 300%; /* 字体大小 */
+            font-family: 楷体;
+            color: white;
+            text-align: left; /* 文字横向居中 */
+            white-space: nowrap; /* 文字不换行 */
+            overflow: hidden; /* 多余的文字内容隐藏 */
+            /*animation: borders 0.7s infinite normal,*/
+            /*widths 4s steps(12); !* 重点 steps() *!*/
+            animation-name: widths,test;
+            animation-timing-function: steps(12),steps(12);
+            animation-duration: 4s,4s;
+            animation-delay: 0s,4s;
+            animation-iteration-count: infinite,infinite;
+            animation-direction:alternate, alternate;
+        }
+        .bigLine{
+            font-size: 400%;
+            font-family: 华文行楷;
+            color: white;
+            text-align: center;
+        }
+
+        /* 边框闪烁动画 模拟指针闪烁 */
+        @keyframes broders {
+            from {border-right-color: #000;}
+            to {border-right-color: #fff;}
+        }
+        /* 容器宽的改变动画 */
+        @keyframes widths {
+            from {width: 0;}
+            to {width: 100%;} /* 也可以是固定宽 */
+        }
+
+        @keyframes test {
+            from{width: 100%}
+            to{width: 0}
+        }
+
+    </style>
+</head>
+<body>
+<div class="frame">
+    <button class="title">一只鹏子</button>
+    <button class="navigation"><img class="icon" src="../../src/assets/关于.png">关于</button>
+    <button class="navigation"><img class="icon" src="../../src/assets/游戏.png">游戏</button>
+    <button class="navigation"><img class="icon" src="../../src/assets/学习.png">学习</button>
+    <button class="navigation"><img class="icon" src="../../src/assets/首页.png">首页</button>
+</div>
+<img class="bgimg" src="../../src/assets/小路1.jpg">
+
+
+<div class="top">
+    <div class="con">
+        <p class="bigLine">欢迎来到鹏子的世界</p>
+        <p class="line">曲径通幽处，禅房花木深。</p>
+    </div>
+</div>
+<div class="bg"></div>
+<div >
+    <div class='yua'></div>
+    <div class='yub'></div>
+    <div class='yuc'></div>
+    <div class='yud'></div>
+    <div class='yue'></div>
+    <div class='yuf'></div>
+</div>
+
+</body>
+</html>
